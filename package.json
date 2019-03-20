@@ -1,0 +1,54 @@
+{
+  "name": "instatic",
+  "version": "1.0.0",
+  "description": "Maintain and publish a static archive of your Instagram posts using Gatsby.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "now-build": "pack build"
+  },
+  "dependencies": {
+    "core-js": "^2.6.5",
+    "dotenv": "^7.0.0",
+    "fs-extra": "^7.0.1",
+    "funstream": "^4.1.1",
+    "got": "^9.6.0",
+    "lambda-git": "^0.1.2",
+    "lodash.get": "^4.4.2",
+    "make-dir": "^2.1.0",
+    "micro-jwt-auth": "^1.10.0",
+    "ndjson": "^1.5.0",
+    "p-throttle": "^3.0.0",
+    "path-exists": "^3.0.0",
+    "simple-git": "^1.107.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juice49/instatic.git"
+  },
+  "author": "Ash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juice49/instatic/issues"
+  },
+  "homepage": "https://github.com/juice49/instatic#readme",
+  "devDependencies": {
+    "@pika/pack": "^0.3.5",
+    "@pika/plugin-build-node": "^0.3.14",
+    "@pika/plugin-standard-pkg": "^0.3.14",
+    "standard": "^12.0.1"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg"
+      ],
+      [
+        "@pika/plugin-build-node",
+        {
+          "minNodeVersion": "8.10"
+        }
+      ]
+    ]
+  }
+}
