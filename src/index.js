@@ -60,7 +60,7 @@ async function run (reset = false) {
     'user.email': process.env.GIT_USER_EMAIL
   })
 
-  await fetch(reset)
+  await fetch({ reset, outputPath })
 
   console.log('Git add')
   await git.add(outputPath)
@@ -74,7 +74,7 @@ async function run (reset = false) {
   console.log('Done')
 }
 
-async function fetch (reset = false) {
+async function fetch ({ reset = false, outputPath }) {
   const feedPath = path.join(outputPath, `feed.ndjson`)
 
   await mkdir(outputPath)
