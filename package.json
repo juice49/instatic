@@ -15,6 +15,7 @@
     "funstream": "^4.1.1",
     "gatsby": "^2.2.8",
     "gatsby-source-filesystem": "^2.0.28",
+    "gatsby-transformer-ndjson": "github:juice49/gatsby-transformer-ndjson",
     "got": "^9.6.0",
     "lambda-git": "^0.1.2",
     "lodash.get": "^4.4.2",
