@@ -1,8 +1,5 @@
 import 'core-js/modules/es7.symbol.async-iterator'
-
-import { config as dotenv } from 'dotenv'
-dotenv()
-
+import 'dotenv/config'
 import { tmpdir } from 'os'
 import { parse } from 'url'
 import qs from 'querystring'
