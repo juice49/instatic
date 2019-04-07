@@ -16,6 +16,18 @@ The serverless functions are designed to run on [Zeit's Now platform](https://no
 You will need a paid plan to allow the function to run for more than ten seconds,
 but Instatic should be very inexpensive to run.
 
+## Config
+
+Instatic requires the following evrionment variables:
+
+| Variable | Description |
+| --- | --- |
+| INSTAGRAM_TOKEN | An Instagram API token authorised to read your feed. |
+| JWT_SECRET | Secret used to verify the webhook JWT. |
+| GIT_REMOTE | The URL of the git repository. |
+| GIT_USER_NAME | The name to use when creating git commits. |
+| GIT_USER_EMAIL | The email address to use when creating git commits. |
+
 ## Todo
 
 - Support posts containing multiple images.
