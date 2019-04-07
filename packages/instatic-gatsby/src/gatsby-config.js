@@ -16,6 +16,8 @@ module.exports = {
         path: path.join(__dirname, 'data', 'images')
       }
     },
-    'gatsby-transformer-ndjson'
+    {
+      resolve: 'gatsby-transformer-ndjson'
+    }
   ]
 }

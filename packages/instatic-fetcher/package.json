@@ -1,0 +1,47 @@
+{
+  "name": "@instatic/fetcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juice49/instatic.git"
+  },
+  "author": "Ash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juice49/instatic/issues"
+  },
+  "homepage": "https://github.com/juice49/instatic#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@pika/pack": "^0.3.5",
+    "@pika/plugin-build-node": "^0.3.14",
+    "@pika/plugin-simple-bin": "^0.3.14",
+    "@pika/plugin-standard-pkg": "^0.3.14",
+    "standard": "^12.0.1"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg"
+      ],
+      [
+        "@pika/plugin-build-node",
+        {
+          "minNodeVersion": "8.10"
+        }
+      ],
+      [
+        "@pika/plugin-simple-bin",
+        {
+          "bin": "instatic"
+        }
+      ]
+    ]
+  }
+}

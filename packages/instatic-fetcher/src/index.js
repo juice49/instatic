@@ -34,7 +34,7 @@ const preFetchPage = page =>
 const preFetchImage = basename =>
   console.log('Fetch image:', basename)
 
-export default auth(async (req, res) => {
+export default auth(async (req, res) => { // xxx name this?
   const url = parse(req.url)
   const params = qs.decode(url.query)
   const reset = typeof params.reset !== 'undefined'
@@ -48,7 +48,7 @@ export default auth(async (req, res) => {
   res.end('Done')
 })
 
-async function run (reset = false) {
+export async function run (reset = false) { // xxx expose as bin
   const repoPath = path.join(tmpdir(), 'instagram')
   const outputPath = path.join(repoPath, 'data')
   const git = gitClient()

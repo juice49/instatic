@@ -13,9 +13,6 @@
     "dotenv": "^7.0.0",
     "fs-extra": "^7.0.1",
     "funstream": "^4.1.1",
-    "gatsby": "^2.2.8",
-    "gatsby-source-filesystem": "^2.0.28",
-    "gatsby-transformer-ndjson": "github:juice49/gatsby-transformer-ndjson",
     "got": "^9.6.0",
     "lambda-git": "^0.1.2",
     "lodash.get": "^4.4.2",
@@ -24,8 +21,6 @@
     "ndjson": "^1.5.0",
     "p-throttle": "^3.0.0",
     "path-exists": "^3.0.0",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
     "simple-git": "^1.107.0"
   },
   "repository": {
@@ -39,23 +34,6 @@
   },
   "homepage": "https://github.com/juice49/instatic#readme",
   "devDependencies": {
-    "@pika/pack": "^0.3.5",
-    "@pika/plugin-build-node": "^0.3.14",
-    "@pika/plugin-standard-pkg": "^0.3.14",
-    "gatsby-cli": "^2.4.17",
-    "standard": "^12.0.1"
-  },
-  "@pika/pack": {
-    "pipeline": [
-      [
-        "@pika/plugin-standard-pkg"
-      ],
-      [
-        "@pika/plugin-build-node",
-        {
-          "minNodeVersion": "8.10"
-        }
-      ]
-    ]
+    "lerna": "^3.13.1"
   }
 }

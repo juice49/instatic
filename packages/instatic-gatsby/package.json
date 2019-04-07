@@ -1,0 +1,29 @@
+{
+  "name": "@instatic/gatsby",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juice49/instatic.git"
+  },
+  "author": "Ash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juice49/instatic/issues"
+  },
+  "homepage": "https://github.com/juice49/instatic#readme",
+  "dependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "gatsby": "^2.2.8",
+    "gatsby-source-filesystem": "^2.0.28",
+    "gatsby-transformer-ndjson": "file:~/projects/gatsby-transformer-ndjson"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
+}
